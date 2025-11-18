@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Ahorra +</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+    <div id="login-screen" class="fade-in">
+        <div class="flex min-h-screen">
+            <div class="hidden md:block md:w-1/2 bg-gradient-to-br from-purple-600 to-purple-800 p-12 text-white">
+                <h2 class="text-3xl font-bold mb-4">Ahorra +</h2>
+                <p class="text-lg text-purple-100">Toma el control de tu futuro financiero.</p>
+            </div>
+
+            <div class="w-full md:w-1/2 flex items-center justify-center p-8">
+                <div class="max-w-md w-full">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-4xl">💰</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Bienvenido (Demo)</h2>
+                        <p class="text-gray-600">Ingresa cualquier dato para continuar.</p>
+                    </div>
+
+                    <form action="Dashboard.html" class="space-y-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <div class="mt-1">
+                                <input type="email" id="email" 
+                                class="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-purple-600"
+                                placeholder="tu@email.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                            <div class="mt-1">
+                                <input type="password" id="password"
+                                class="w-full p-3 border-2 border-gray-200 rounded-lg text-base focus:outline-none focus:border-purple-600"
+                                placeholder="••••••••">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button 
+                                type="submit"
+                                class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition"
+                            >
+                                Ingresar al Dashboard
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <a href="Index.html" 
+                        class="w-full mt-4 bg-white text-purple-600 py-3 px-6 rounded-lg border-2 border-gray-200 hover:border-purple-600 hover:bg-purple-50 transition text-center block">
+                        ← Volver al inicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

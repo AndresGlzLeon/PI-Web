@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorra + | Gestión Financiera Personal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-white">
+
+    <div id="landing-screen" class="fade-in">
+        <nav class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
+                            <span class="text-2xl">💰</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-purple-900">Ahorra +</h2>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="hidden sm:flex items-center gap-2">
+                            <div id="indicator-hero" class="w-2 h-2 rounded-full bg-purple-600"></div>
+                            <div id="indicator-features" class="w-2 h-2 rounded-full bg-gray-300"></div>
+                            <div id="indicator-cta" class="w-2 h-2 rounded-full bg-gray-300"></div>
+                        </div>
+                        <a href="Login.html" 
+                           class="bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition">
+                            Probar Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero-section" class="bg-gradient-to-br from-purple-600 to-purple-800 text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                            Controla tus finanzas con <span class="text-purple-200">Ahorra +</span>
+                        </h1>
+                        <p class="text-lg text-purple-100 mb-8 max-w-xl">
+                            La aplicación más inteligente para administrar tu dinero, establecer metas de ahorro y alcanzar la libertad financiera.
+                        </p>
+                        <a href="Login.html" class="bg-white text-purple-600 hover:bg-purple-50 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition">
+                            <span>📱</span>
+                            Probar Demo Gratis
+                            <span>→</span>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                            <img 
+                                src="https://images.unsplash.com/photo-1654089670624-0db58288cd01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYXZpbmdzJTIwbW9uZXklMjBmaW5hbmNlfGVufDF8fHx8MTc2MTc3MjcwOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                                alt="Ahorro financiero"
+                                class="w-full h-64 object-cover rounded-lg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features-section" class="hidden py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Todo lo que necesitas para ahorrar</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Herramientas simples y poderosas para gestionar tus finanzas personales
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border-2 border-gray-200 p-6 text-center">...</div>
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border-2 border-gray-200 p-6 text-center">...</div>
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border-2 border-gray-200 p-6 text-center">...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-section" class="hidden py-20 bg-gradient-to-br from-purple-600 to-purple-800 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Comienza a ahorrar hoy mismo</h2>
+                <p class="text-lg text-purple-100 mb-8 max-w-2xl mx-auto">
+                    Únete a miles de personas que ya están tomando el control de sus finanzas
+                </p>
+                <a href="Login.html" class="bg-white text-purple-600 hover:bg-purple-50 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 mx-auto transition">
+                    <span>📱</span>
+                    Probar Demo Ahora
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+
+        <div class="bg-white border-t border-gray-200 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <button 
+                        id="btn-previous" 
+                        class="bg-white text-purple-600 py-3 px-6 rounded-lg border-2 border-gray-200 hover:border-purple-600 hover:bg-purple-50 transition disabled:text-slate-300 disabled:border-gray-200 disabled:cursor-not-allowed flex items-center gap-2"
+                        disabled
+                    >
+                        <span>←</span>
+                        Anterior
+                    </button>
+                    <div class="flex items-center gap-2">
+                        <span id="landing-counter" class="text-gray-600">1 de 3</span>
+                    </div>
+                     <a href="Dashboard.html"> </a><button 
+                    
+                        id="btn-next" 
+                        class="bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition disabled:bg-slate-300 disabled:cursor-not-allowed flex items-center gap-2"
+                    >
+                        <a href="Dashboard.html" 
+                           class="bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition">
+                            Siguiente
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
